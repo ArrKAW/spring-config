@@ -8,6 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/ArrKAW/config-information.git
-          username: slasue@naver.com
+          uri: git@github.com:ArrKAW/config-information.git
+          username: ArrKAW
           password: sksms11!dhk
+          default-label: master
