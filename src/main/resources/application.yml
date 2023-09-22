@@ -4,11 +4,18 @@ server:
 spring:
   application:
     name: config-server
+    #로컬 환경시 profiles 제거
+  profiles:
+    active: native
   cloud:
     config:
       server:
+        #로컬 환경
+        native:
+          search-locations: file:///C:\MyWorkSpace\configurationFile\native-file-repo
+        #git 환경
         git:
-          uri: git@github.com:ArrKAW/config-information.git
-          username: ArrKAW
-          password: sksms11!dhk
-          default-label: master
+#          uri: git@github.com:ArrKAW/config-information.git
+#          username: ArrKAW
+#          password: sksms11!dhk
+#          default-label: master
